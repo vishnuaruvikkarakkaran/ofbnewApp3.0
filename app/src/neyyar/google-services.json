@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "31237503339",
+    "firebase_url": "https://neyyar-e-learning.firebaseio.com",
+    "project_id": "neyyar-e-learning",
+    "storage_bucket": "neyyar-e-learning.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31237503339:android:2ee85c8341b6cbe31af42e",
+        "android_client_info": {
+          "package_name": "com.neyyaracademy.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31237503339-6gdoqho74asje915fe76b6rslu22jh14.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.neyyaracademy.application",
+            "certificate_hash": "79f42d0bcee157432c3aa9dedc9907072393b1d2"
+          }
+        },
+        {
+          "client_id": "31237503339-5ljb5r97tm6vvt3m7hg2gfvn97nsebn6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5bqeiW40OvQN1Mo7NaiXZjTylYo8CuFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31237503339-5ljb5r97tm6vvt3m7hg2gfvn97nsebn6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

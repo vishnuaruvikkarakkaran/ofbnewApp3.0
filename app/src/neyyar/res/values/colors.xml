@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C51D44</color>
+    <color name="colorPrimaryDark">#9C1E4D</color>
+    <color name="colorAccent">#9C1E4D</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="sideDrawerColor">#415AD2</color>
+    <color name="colorBlack">#000000</color>
+    <color name="color_popular_course_tv">#4c4c4c</color>
+    <color name="colorGrey">#a7a7a7</color>
+    <color name="colorDarkGrey">#707070</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorBlue">#54C6D2</color>
+    <color name="color_off_white">#FEFEFE</color>
+    <color name="homeColorBg">#f3f3f3</color>
+    <color name="popularCourseOutLineColor">#eaeaea</color>
+    <color name="userProfileColorBg">#ffffff</color>
+    <color name="userProfileDividerColorBg">#f8f8f8</color>
+    <color name="editProfileColorBg">#ffffff</color>
+    <color name="editProfileTextColor">#a8a8a8</color>
+    <color name="colorGreen">#8bc83f</color>
+
+    <color name="homeColorPrimary">#415AD2</color>
+    <color name="homeColorPrimaryDark">#465ec5</color>
+    <color name="homeNavigationBarColor">#415AD2</color>
+    <color name="homeNavigationBarTextColor">#2B2B2B</color>
+    <color name="colorGreyLight">#93F3F3F3</color>
+    <color name="course_status_indicator_colour">#62bfd1</color>
+    <color name="reward_points_bg_colour">#435DC1</color>
+
+    <color name="colorGrayDim">#f8f8f8</color>
+
+    <color name="cyan_50">#E0F7FA</color>
+    <color name="amber_50">#FFF8E1</color>
+    <color name="purple_50">#F3E5F5</color>
+    <!--Indigo 500-->
+    <color name="primary_500">#3F51B5</color>
+    <!--Indigo 700-->
+    <color name="primary_700">#303F9F</color>
+
+    <!--shimmer layout design -->
+    <color name="background">#dddddd</color>
+
+</resources>

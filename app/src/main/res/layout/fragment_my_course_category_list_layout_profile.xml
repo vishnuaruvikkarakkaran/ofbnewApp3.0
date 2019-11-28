@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="@dimen/Space_20"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <include
+                layout="@layout/ob_header_image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Space_200"
+            android:layout_gravity="bottom|center"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <include
+                layout="@layout/ob_footer_image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.enfin.ofabee3.utils.AvenirTextView
+                android:id="@+id/categoryListTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/Space_20"
+                android:layout_marginTop="@dimen/Space_10"
+                android:layout_marginRight="@dimen/Space_20"
+                android:gravity="center"
+                android:padding="@dimen/Space_5"
+                android:text="@string/choose_course_category_title"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_18" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Space_300"
+                android:layout_marginLeft="@dimen/Space_20"
+                android:layout_marginTop="@dimen/Space_10"
+                android:layout_marginRight="@dimen/Space_20">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/my_courses_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:scrollbars="vertical"
+                    android:visibility="visible" />
+
+            </androidx.core.widget.NestedScrollView>
+
+            <!--continue button-->
+            <com.enfin.ofabee3.utils.AvenirButton
+                android:id="@+id/continueButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/Space_20"
+                android:layout_marginTop="@dimen/Space_20"
+                android:layout_marginEnd="@dimen/Space_20"
+                android:background="@color/colorAccent"
+                android:padding="@dimen/Space_5"
+                android:text="@string/continue_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_16" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

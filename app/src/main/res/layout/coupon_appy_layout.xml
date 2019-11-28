@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/homeColorBg"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Space_10"
+            android:layout_marginEnd="@dimen/Space_0"
+            android:layout_weight="0.8"
+            android:drawableStart="@drawable/ic_tick"
+            android:drawablePadding="@dimen/Space_5"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="OFRTVM20 is applied"
+            android:textColor="#444444"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/Space_14" />
+
+        <ImageView
+            android:id="@+id/close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/close" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/applied_coupon_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apply_coupon_ll"
+        android:layout_marginStart="@dimen/Space_10"
+        android:layout_marginTop="@dimen/Space_10"
+        android:layout_marginEnd="@dimen/Space_10"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:padding="@dimen/Space_2"
+        android:visibility="visible"
+        android:weightSum="1">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/dash_view_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Space_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="Price"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_extrabold"
+                android:gravity="end"
+                android:text="₹ 5000"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Space_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="Coupon Discount"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:drawableStart="@drawable/ic_close_no_bg"
+                android:fontFamily="@font/opensans_semibold"
+                android:gravity="center"
+                android:paddingStart="@dimen/Space_10"
+                android:text="Remove"
+                android:textColor="#247bc2"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_extrabold"
+                android:gravity="end"
+                android:text="-₹ 900"
+                android:textColor="#42BD09" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/Space_10"
+            android:background="@drawable/dash_view_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Space_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/opensans_extrabold"
+                android:text="Total amount"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_extrabold"
+                android:gravity="end"
+                android:text="₹ 4100"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

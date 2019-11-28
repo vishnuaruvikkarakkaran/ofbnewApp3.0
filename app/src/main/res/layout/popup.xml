@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="@dimen/Space_10"
+        android:gravity="end">
+
+        <com.enfin.ofabee3.utils.CircleImageView
+            android:id="@+id/user_avatar_iv"
+            android:layout_width="@dimen/Space_50"
+            android:layout_height="@dimen/Space_50"
+            android:layout_margin="@dimen/Space_10"
+            android:src="@drawable/man" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/fl_menu_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:background="@drawable/_menu_bg">
+
+                <!--<ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable-mdpi/ic_menubg" />-->
+
+                <LinearLayout
+                    android:id="@+id/ll_menu_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/homeMenuDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/Space_20"
+                        android:text="Home"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_20"
+                        android:visibility="gone" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/menu_list_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/Space_50"
+                        android:layout_marginBottom="@dimen/Space_100"
+                        android:scrollbars="vertical" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/menu_close_btn"
+                    android:layout_width="@dimen/Space_60"
+                    android:layout_height="@dimen/Space_60"
+                    android:src="@drawable/ic_close" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

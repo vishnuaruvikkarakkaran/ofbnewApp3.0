@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/Space_5"
+    android:background="@drawable/round_edge_layout_bg_popular_courses"
+    android:elevation="0dp"
+    android:orientation="horizontal"
+    android:padding="@dimen/Space_5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/Space_0"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="1">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/parent_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/Space_2"
+            android:layout_weight="0.4"
+            android:background="@color/colorWhite"
+            android:elevation="@dimen/Space_0"
+            app:cardCornerRadius="3dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/Space_0"
+                android:background="@color/colorWhite">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite">
+
+                    <ImageView
+                        android:id="@+id/course_thumbnail"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:adjustViewBounds="true"
+                        app:layout_constraintDimensionRatio="H,16:9"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/sample_course" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.4"
+                    android:background="@color/colorBlack"
+                    android:visibility="visible"
+                    app:layout_constraintDimensionRatio="H,16:9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/Space_40"
+                        android:layout_height="@dimen/Space_40"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_play_circle_outline_white_24dp" />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/Space_5"
+            android:layout_marginRight="@dimen/Space_5"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.enfin.ofabee3.utils.OpenSansTextView
+                android:id="@+id/course_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="Roboto-Thin"
+                android:maxLines="2"
+                android:text="The Complete financial analyst combo course - 2019"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/Space_0"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <ProgressBar
+                    android:id="@+id/course_status_pb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_weight="0.8"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:minHeight="50dp"
+                    android:progress="10"
+                    android:progressDrawable="@drawable/progress_bar_bg"
+                    android:scaleY="1" />
+
+                <com.enfin.ofabee3.utils.OpenSansTextView
+                    android:id="@+id/progress_percentile_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.2"
+                    android:fontFamily="Roboto regular"
+                    android:gravity="center_vertical|end"
+                    android:text="60%"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/text_12"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/Space_0"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1">
+
+                <com.enfin.ofabee3.utils.AvenirButton
+                    android:id="@+id/is_bundle_button"
+                    android:layout_width="@dimen/Space_60"
+                    android:layout_height="@dimen/Space_12"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/course_bundle_label_bg"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/Space_1"
+                    android:paddingEnd="@dimen/Space_1"
+                    android:text="Combo Course"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_off_white"
+                    android:textSize="@dimen/text_7"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <com.enfin.ofabee3.utils.OpenSansTextViewBold
+                android:id="@+id/course_status_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/Space_0"
+                android:gravity="end"
+                android:text="Resume Course"
+                android:textColor="@color/course_status_indicator_colour"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

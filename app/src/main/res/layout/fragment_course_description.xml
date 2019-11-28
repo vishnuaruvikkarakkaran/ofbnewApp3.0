@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homeColorBg"
+    android:paddingBottom="@dimen/Space_60"
+    tools:context=".ui.module.coursedetail.coursedescription.CourseDescriptionFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Space_10"
+            android:layout_marginEnd="@dimen/Space_10"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="@dimen/Space_1"
+                android:layout_marginEnd="@dimen/Space_1"
+                android:layout_marginBottom="@dimen/Space_0"
+                android:background="@drawable/course_descrption_shadow" />
+
+            <LinearLayout
+                android:id="@+id/wug_parent_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/Space_10"
+                android:layout_marginTop="@dimen/Space_20"
+                android:layout_marginEnd="@dimen/Space_10"
+                android:layout_marginBottom="@dimen/Space_0"
+                android:padding="@dimen/Space_10"
+                android:background="@drawable/round_edge_layout_bg_course_description"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/whatuget_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/Space_0"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:text="What you'll Get"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/whatuget_des_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/Space_0"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingStart="@dimen/Space_10"
+                    android:paddingEnd="@dimen/Space_10"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                    android:textColor="#363636"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/wug_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/req_parent_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/Space_10"
+                android:layout_marginTop="@dimen/Space_20"
+                android:layout_marginEnd="@dimen/Space_10"
+                android:layout_marginBottom="@dimen/Space_0"
+                android:padding="@dimen/Space_10"
+                android:background="@drawable/round_edge_layout_bg_course_description"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/requirement_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/Space_0"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:text="Requirements"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+
+                <TextView
+                    android:id="@+id/requirement_des_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/Space_0"
+                    android:background="@drawable/round_edge_layout_bg_course_description"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingStart="@dimen/Space_10"
+                    android:paddingEnd="@dimen/Space_10"
+                    android:text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                    android:textColor="#363636"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/req_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/des_parent_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/Space_10"
+                android:layout_marginTop="@dimen/Space_20"
+                android:layout_marginEnd="@dimen/Space_10"
+                android:layout_marginBottom="@dimen/Space_0"
+                android:padding="@dimen/Space_0"
+                android:background="@drawable/round_edge_layout_bg_course_description"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/description_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/Space_0"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:text="Description"
+                    android:paddingStart="@dimen/Space_5"
+                    android:paddingTop="@dimen/Space_10"
+                    android:paddingBottom="@dimen/Space_0"
+                    android:paddingEnd="@dimen/Space_10"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+
+                <!-- <TextView
+                     android:id="@+id/description_des_tv"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="@dimen/Space_0"
+                     android:background="@drawable-mdpi/round_edge_layout_bg_course_description"
+                     android:fontFamily="@font/opensans_regular"
+                     android:paddingEnd="@dimen/Space_5"
+                     android:layout_gravity="center_vertical|end"
+                     android:paddingStart="@dimen/Space_5"
+                     android:text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                     android:textColor="#363636" />-->
+
+                <WebView
+                    android:id="@+id/description_des_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

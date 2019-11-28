@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.module.login.LoginActivity">
+
+    <!--Bottom layer-->
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Space_180"
+        android:layout_marginEnd="@dimen/Space_90"
+        android:background="@drawable/ic_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Logo-->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView"
+                android:layout_width="@dimen/Space_60"
+                android:layout_height="@dimen/Space_60"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/Space_40"
+                app:srcCompat="@drawable/ic_logo" />
+
+            <!--Join now Text-->
+            <TextView
+                android:id="@+id/joinNowTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/Space_20"
+                android:layout_marginTop="@dimen/Space_30"
+                android:padding="@dimen/Space_5"
+                android:text="@string/join_now_text"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_28"
+                android:textStyle="bold"
+                app:fontFamily="@font/avenir_bold" />
+
+            <!--Name edit text-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/regNameTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/Space_20"
+                android:layout_marginEnd="@dimen/Space_20">
+
+                <com.enfin.ofabee3.utils.AvenirEditText
+                    android:id="@+id/nameRegEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/finestGray"
+                    android:hint="@string/name_hint"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_16" />
+
+                <com.enfin.ofabee3.utils.OpenSansTextView
+                    android:id="@+id/name_error_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/text_10"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--Phone number edit text-->
+            <LinearLayout
+                android:id="@+id/numberSelectionLayoutReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/Space_23"
+                android:layout_marginTop="@dimen/Space_5"
+                android:layout_marginEnd="@dimen/Space_23"
+                android:background="@drawable/bottom_border"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccpReg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="-5dp"
+                    android:layout_marginEnd="-5dp"
+                    app:ccpDialog_showCloseIcon="true"
+                    app:ccp_arrowSize="20dp"
+                    app:ccp_defaultNameCode="IN"
+                    app:ccp_showFlag="false"
+                    app:ccp_showNameCode="false"
+                    app:ccp_textSize="16sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.enfin.ofabee3.utils.AvenirEditText
+                        android:id="@+id/numberRegEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:backgroundTint="@color/finestGray"
+                        android:hint="@string/phone_number_text"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:textSize="@dimen/text_16" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <com.enfin.ofabee3.utils.OpenSansTextView
+                android:id="@+id/phone_number_error_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/Space_20"
+                android:text=""
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/text_10"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <!--&lt;!&ndash;Phone number edit text&ndash;&gt;
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneNumberRegLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/Space_20"
+                android:layout_marginEnd="@dimen/Space_20">
+
+                <com.enfin.ofabee3.utils.PrefixAvenirEditText
+                    android:id="@+id/numberRegEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="@string/telephone_code_india"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_16"
+                    android:hint="@string/phone_number_text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <!--Email edit text-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailRegLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/Space_20"
+                android:layout_marginEnd="@dimen/Space_20">
+
+                <com.enfin.ofabee3.utils.AvenirEditText
+                    android:id="@+id/emailRegEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/finestGray"
+                    android:hint="@string/email_address_text"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_16" />
+
+                <com.enfin.ofabee3.utils.OpenSansTextView
+                    android:id="@+id/email_error_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Invalid Email"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/text_10"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--password Edit text-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordRegLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/Space_20"
+                android:layout_marginEnd="@dimen/Space_20">
+
+                <com.enfin.ofabee3.utils.AvenirEditText
+                    android:id="@+id/passwordRegEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/Space_10"
+                    android:backgroundTint="@color/finestGray"
+                    android:drawableEnd="@drawable/ic_visibility_grey_24dp"
+                    android:hint="@string/password_text"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_16" />
+
+                <com.enfin.ofabee3.utils.OpenSansTextView
+                    android:id="@+id/password_error_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Invalid Password"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/text_10"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--Join now button-->
+            <com.enfin.ofabee3.utils.AvenirButton
+                android:id="@+id/joinNowButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/Space_20"
+                android:layout_marginTop="@dimen/Space_10"
+                android:layout_marginEnd="@dimen/Space_20"
+                android:background="@color/colorAccent"
+                android:padding="@dimen/Space_5"
+                android:text="@string/join_now_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_16" />
+
+            <!--Create account layout-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/Space_40"
+                android:orientation="horizontal">
+
+                <com.enfin.ofabee3.utils.AvenirTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/have_account_text"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/text_14" />
+
+                <com.enfin.ofabee3.utils.AvenirTextView
+                    android:id="@+id/signInTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/Space_5"
+                    android:text="@string/sign_in_text"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/text_14"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!--Skip view-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.enfin.ofabee3.utils.AvenirTextView
+                    android:id="@+id/skipRegTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="@dimen/Space_20"
+                    android:layout_marginBottom="@dimen/Space_20"
+                    android:drawableEnd="@drawable/ic_arrow_forward_grey_24dp"
+                    android:gravity="center"
+                    android:text="@string/skip_text"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/text_14"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

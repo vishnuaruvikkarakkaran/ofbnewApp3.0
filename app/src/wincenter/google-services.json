@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "789933437349",
+    "firebase_url": "https://wincenter-e-learning.firebaseio.com",
+    "project_id": "wincenter-e-learning",
+    "storage_bucket": "wincenter-e-learning.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789933437349:android:c38523c45d4eda7045b84c",
+        "android_client_info": {
+          "package_name": "com.enfin.ofabee3.wincenter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789933437349-6tv02u6gs7r7npe8li8k96ju92rofpf5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.enfin.ofabee3.wincenter",
+            "certificate_hash": "79f42d0bcee157432c3aa9dedc9907072393b1d2"
+          }
+        },
+        {
+          "client_id": "789933437349-fr3lk4d8ntp7kp7kbjnvkdgpo8aihiab.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7VuMhawLTqnyS51fBlzOV9-lZEnsqS80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789933437349-fr3lk4d8ntp7kp7kbjnvkdgpo8aihiab.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

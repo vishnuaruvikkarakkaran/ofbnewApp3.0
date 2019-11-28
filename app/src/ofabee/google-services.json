@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "698972651673",
+    "firebase_url": "https://ofabee-f144d.firebaseio.com",
+    "project_id": "ofabee-f144d",
+    "storage_bucket": "ofabee-f144d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698972651673:android:e1fff7b424ba5cfe35f808",
+        "android_client_info": {
+          "package_name": "com.enfin.ofabee3.ofabee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698972651673-pkq9rgok6btk7mal582m4epkj3vpakm0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.enfin.ofabee3.ofabee",
+            "certificate_hash": "79f42d0bcee157432c3aa9dedc9907072393b1d2"
+          }
+        },
+        {
+          "client_id": "698972651673-t7c5ag7js5qdi5d39ullshcs1594id8h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq0ZesgmkUFuGAf3qdujMNVncINW8Ff2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698972651673-t7c5ag7js5qdi5d39ullshcs1594id8h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
